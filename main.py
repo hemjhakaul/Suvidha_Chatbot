@@ -26,7 +26,7 @@ if "qa_chain" not in st.session_state:
 # Header
 st.markdown("""
 <div class="main-header">
-    <h1>💬 SJVNL - Suvidha Chatbot</h1>
+    <h1>💬Suvidha Chatbot</h1>
     <p style="font-size: 1.2em; margin-top: 1rem; opacity: 0.9;">
         Intelligent PDF Document Assistant powered by Local AI
     </p>
@@ -53,7 +53,7 @@ elif st.session_state.current_page == "Document Upload":
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; opacity: 0.7; padding: 1rem;">
-    <p>🤖 SJVNL Suvidha Chatbot v2.0 | Powered by Ollama & LangChain</p>
+    <p>🤖 Suvidha Chatbot v2.0 | Powered by Ollama & LangChain</p>
     <p>Made with ❤️ using Streamlit</p>
 </div>
 """, unsafe_allow_html=True)
