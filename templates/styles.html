@@ -1,0 +1,178 @@
+st.markdown("""
+<style>
+    /* Main background */
+    .main {
+        background-color: #1e3a8a;
+        color: white;
+    }
+    
+    /* Sidebar styling */
+    .css-1d391kg {
+        background-color: #1e40af;
+    }
+    
+    /* Navigation tabs styling */
+    .nav-tab {
+        background: rgba(59, 130, 246, 0.3);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(96, 165, 250, 0.5);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-tab:hover {
+        background: rgba(59, 130, 246, 0.5);
+        transform: translateY(-2px);
+    }
+    
+    .nav-tab.active {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        border-color: #93c5fd;
+    }
+    
+    /* Chat input styling */
+    .stChatInput > div > div > input {
+        background-color: #3b82f6;
+        color: white;
+        border: 1px solid #60a5fa;
+    }
+    
+    /* File uploader styling */
+    .stFileUploader > div > div > div {
+        background-color: #3b82f6;
+        border: 2px dashed #60a5fa;
+    }
+    
+    /* Progress bar styling */
+    .stProgress > div > div {
+        background-color: #60a5fa;
+    }
+    
+    /* Header styling */
+    .main-header {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        text-align: center;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Chat container styling */
+    .chat-container {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        min-height: 70vh;
+    }
+    
+    /* Feature card styling */
+    .feature-card {
+        background: rgba(59, 130, 246, 0.3);
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin: 1rem 0;
+        border: 1px solid rgba(96, 165, 250, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    
+    /* Stats card styling */
+    .stats-card {
+        background: rgba(59, 130, 246, 0.2);
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        margin: 0.5rem 0;
+    }
+    
+    /* History item styling */
+    .history-item {
+        background: rgba(59, 130, 246, 0.2);
+        padding: 0.8rem;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .history-item:hover {
+        background: rgba(59, 130, 246, 0.4);
+        transform: translateY(-1px);
+    }
+    
+    /* Button styling */
+    .stButton > button {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    
+    .stButton > button:hover {
+        background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Expander styling */
+    .streamlit-expanderHeader {
+        background-color: rgba(59, 130, 246, 0.3);
+        border-radius: 8px;
+        color: white;
+    }
+    
+    /* Success/Info/Warning message styling */
+    .stSuccess, .stInfo, .stWarning {
+        background-color: rgba(59, 130, 246, 0.2);
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+    }
+    
+    /* Download link styling */
+    a {
+        color: #93c5fd;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    a:hover {
+        color: #dbeafe;
+        text-decoration: underline;
+    }
+    
+    /* Empty state styling */
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        opacity: 0.7;
+    }
+    
+    /* Chat message styling */
+    .chat-message {
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+    
+    .user-message {
+        background: rgba(96, 165, 250, 0.3);
+        border-left: 4px solid #60a5fa;
+    }
+    
+    .assistant-message {
+        background: rgba(59, 130, 246, 0.2);
+        border-left: 4px solid #3b82f6;
+    }
+</style>
+""", unsafe_allow_html=True)
